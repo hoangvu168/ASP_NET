@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tiền bàn BI-A</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="jquery.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="title">Tính tiền bàn BI-A</h2>
+
+        <div class="input-group">
+            <label for="gio">Số giờ chơi:</label>
+            <input type="text" id="gio" class="input-box" placeholder="Nhập số giờ chơi">
+        </div>
+
+        <div class="input-group">
+            <label>Loại gậy:</label>
+            <div class="checkbox-group">
+                <label><input type="radio" name="LoaiGay" id="thuong" class="checkbox" value="1"> Gậy thường (30.000đ/giờ)</label>
+                <label><input type="radio" name="LoaiGay" id="vip" class="checkbox" value="2"> Gậy VIP (50.000đ/giờ)</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Sử dụng thêm doa:</label>
+            <label><input type="checkbox" id="doa" class="checkbox" value="1"> Thêm doa (10.000đ/giờ)</label>
+        </div>
+
+        <div class="input-group">
+            <button id="tinhtien" class="btn-calculate">Tính tiền</button>
+        </div>
+
+    </div>
+</body>
+</html>
